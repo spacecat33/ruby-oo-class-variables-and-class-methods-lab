@@ -31,7 +31,7 @@ class Song
         artist_count = {}
         @@artists.each do |artist|
             if artist_count[artist]
-                artist_count[artist] += 1
+                artist_count[artist] += 1   #See explanation below for genre_count
             else 
                 artist_count[artist] = 1
             end
@@ -43,7 +43,7 @@ class Song
         genre_count = {}
         @@genres.each do |genre|
             if genre_count[genre]
-                genre_count[genre] += 1
+                genre_count[genre] += 1    #iterate over the @@genres array and populate a hash with the key/value pairs. You will need to check to see if the hash already contains a key of a particular genre. If so, increment the value of that key by one, otherwise, create a new key/value pair.
             else 
                 genre_count[genre] = 1
             end
